@@ -208,6 +208,10 @@ namespace ManagedDoom
 
 
 
+        /// <summary>
+        /// This represents a command-line argument. It only tracks whether the
+        /// argument is present or not (a flag).
+        /// </summary>
         public class Arg
         {
             private bool present;
@@ -225,6 +229,11 @@ namespace ManagedDoom
             public bool Present => present;
         }
 
+        /// <summary>
+        /// This represents a command-line argument. It tracks whether the
+        /// argument is present or not as well as its value.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
         public class Arg<T>
         {
             private bool present;
