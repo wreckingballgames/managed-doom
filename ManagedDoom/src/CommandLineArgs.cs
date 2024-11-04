@@ -147,6 +147,13 @@ namespace ManagedDoom
             return new Arg<string[]>();
         }
 
+        /// <summary>
+        /// Return a new Arg with a tuple representing an episode and map to
+        /// warp to. If only one number is provided, warps to given map in
+        /// episode 1; if no numbers are extracted, returns default Arg.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         private static Arg<Tuple<int, int>> Check_warp(string[] args)
         {
             var values = GetValues(args, "-warp");
