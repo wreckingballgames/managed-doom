@@ -274,22 +274,22 @@ namespace ManagedDoom
         /// <typeparam name="T"></typeparam>
         public class Arg<T>
         {
-            private bool present;
+            private bool isPresent;
             private T value;
 
             public Arg()
             {
-                this.present = false;
+                this.isPresent = false;
                 this.value = default;
             }
 
             public Arg(T value)
             {
-                this.present = true;
+                this.isPresent = true;
                 this.value = value;
             }
 
-            public bool Present => present;
+            public bool IsPresent => isPresent;
             public T Value => value;
         }
     }

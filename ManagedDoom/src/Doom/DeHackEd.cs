@@ -29,7 +29,7 @@ namespace ManagedDoom
 
         public static void Initialize(CommandLineArgs args, Wad wad)
         {
-            if (args.deh.Present)
+            if (args.deh.IsPresent)
             {
                 ReadFiles(args.deh.Value);
             }

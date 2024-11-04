@@ -99,7 +99,7 @@ namespace ManagedDoom
         {
             var wadPaths = new List<string>();
 
-            if (args.iwad.Present)
+            if (args.iwad.IsPresent)
             {
                 wadPaths.Add(args.iwad.Value);
             }
@@ -108,7 +108,7 @@ namespace ManagedDoom
                 wadPaths.Add(ConfigUtilities.GetDefaultIwadPath());
             }
 
-            if (args.file.Present)
+            if (args.file.IsPresent)
             {
                 foreach (var path in args.file.Value)
                 {

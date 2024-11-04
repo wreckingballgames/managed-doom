@@ -17,7 +17,7 @@ namespace ManagedDoom.Silk
 #if !WINDOWS_RELEASE
         public void Run()
         {
-            if (args.timedemo.Present)
+            if (args.timedemo.IsPresent)
             {
                 window.UpdatesPerSecond = 0;
                 window.FramesPerSecond = 0;

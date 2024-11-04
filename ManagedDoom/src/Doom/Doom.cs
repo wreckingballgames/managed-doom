@@ -113,14 +113,14 @@ namespace ManagedDoom
 
         private void CheckGameArgs()
         {
-            if (args.warp.Present)
+            if (args.warp.IsPresent)
             {
                 nextState = DoomState.Game;
                 options.Episode = args.warp.Value.Item1;
                 options.Map = args.warp.Value.Item2;
                 game.DeferedInitNew();
             }
-            else if (args.episode.Present)
+            else if (args.episode.IsPresent)
             {
                 nextState = DoomState.Game;
                 options.Episode = args.episode.Value;
@@ -128,7 +128,7 @@ namespace ManagedDoom
                 game.DeferedInitNew();
             }
 
-            if (args.skill.Present)
+            if (args.skill.IsPresent)
             {
                 options.Skill = (GameSkill)(args.skill.Value - 1);
             }
@@ -158,19 +158,19 @@ namespace ManagedDoom
                 options.NoMonsters = true;
             }
 
-            if (args.loadgame.Present)
+            if (args.loadgame.IsPresent)
             {
                 nextState = DoomState.Game;
                 game.LoadGame(args.loadgame.Value);
             }
 
-            if (args.playdemo.Present)
+            if (args.playdemo.IsPresent)
             {
                 nextState = DoomState.DemoPlayback;
                 demoPlayback = new DemoPlayback(args, content, options, args.playdemo.Value);
             }
 
-            if (args.timedemo.Present)
+            if (args.timedemo.IsPresent)
             {
                 nextState = DoomState.DemoPlayback;
                 demoPlayback = new DemoPlayback(args, content, options, args.timedemo.Value);
