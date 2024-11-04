@@ -54,6 +54,11 @@ namespace ManagedDoom
             return Path.Combine(GetExeDirectory(), "managed-doom.cfg");
         }
 
+        /// <summary>
+        /// Get first valid IWAD found in active directory.
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public static string GetDefaultIwadPath()
         {
             var exeDirectory = GetExeDirectory();
