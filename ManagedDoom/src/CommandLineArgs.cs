@@ -197,6 +197,12 @@ namespace ManagedDoom
             return new Arg<int>();
         }
 
+        /// <summary>
+        /// Return the list of values passed to a command-line argument.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         private static string[] GetValues(string[] args, string name)
         {
             return args
