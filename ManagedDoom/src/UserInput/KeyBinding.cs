@@ -66,6 +66,12 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Parse a comma-separated list of values in a string to DoomKeys and
+        /// DoomMouseButtons corresponding to this KeyBinding.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static KeyBinding Parse(string value)
         {
             if (value == "none")
