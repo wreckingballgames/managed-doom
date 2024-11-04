@@ -182,6 +182,13 @@ namespace ManagedDoom
             return new Arg<string>();
         }
 
+        /// <summary>
+        /// Return a new Arg with an integer value from the given command-line
+        /// argument. If no value is extracted from args, return default Arg.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         private static Arg<int> GetInt(string[] args, string name)
         {
             var values = GetValues(args, name);
