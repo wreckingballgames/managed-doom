@@ -110,7 +110,7 @@ namespace ManagedDoom
             }
             else
             {
-                wadPaths.Add(ConfigUtilities.GetDefaultIwadPath());
+                wadPaths.Add(GetDefaultIwadPath());
             }
 
             if (args.file.IsPresent)
