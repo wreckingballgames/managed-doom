@@ -318,6 +318,14 @@ namespace ManagedDoom
             return defaultValue;
         }
 
+        /// <summary>
+        /// Parse dictionary for KeyBinding value of given key. Return the
+        /// extracted value or a default value.
+        /// </summary>
+        /// <param name="dic"></param>
+        /// <param name="name"></param>
+        /// <param name="defaultValue"></param>
+        /// <returns></returns>
         private static KeyBinding GetKeyBinding(Dictionary<string, string> dic, string name, KeyBinding defaultValue)
         {
             string stringValue;
