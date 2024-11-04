@@ -250,6 +250,14 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Parse dictionary for integer value of given key. Return the
+        /// extracted value or a default value.
+        /// </summary>
+        /// <param name="dic"></param>
+        /// <param name="name"></param>
+        /// <param name="defaultValue"></param>
+        /// <returns></returns>
         private static int GetInt(Dictionary<string, string> dic, string name, int defaultValue)
         {
             string stringValue;
