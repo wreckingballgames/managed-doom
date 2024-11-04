@@ -201,7 +201,6 @@ namespace ManagedDoom
         {
             return args
                 .SkipWhile(arg => arg != name)
-                .Skip(1)
                 .TakeWhile(arg => arg[0] != '-')
                 .ToArray();
         }
