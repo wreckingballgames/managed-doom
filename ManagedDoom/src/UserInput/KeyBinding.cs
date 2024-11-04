@@ -48,7 +48,7 @@ namespace ManagedDoom
         }
 
         /// <summary>
-        /// Map all KeyBinding values to a comma-separated list of strings.
+        /// Map all KeyBinding values to a comma-separated list of values in string form.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
