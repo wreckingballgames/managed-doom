@@ -57,7 +57,7 @@ namespace ManagedDoom
             demo.Options.Sound = options.Sound;
             demo.Options.Music = options.Music;
 
-            if (args.solonet.Present)
+            if (args.solonet.IsPresent)
             {
                 demo.Options.NetGame = true;
             }

@@ -87,20 +87,20 @@ namespace ManagedDoom.Silk
 
             video = new SilkVideo(config, content, window, gl);
 
-            if (!args.nosound.Present && !(args.nosfx.Present && args.nomusic.Present))
+            if (!args.nosound.IsPresent && !(args.nosfx.IsPresent && args.nomusic.IsPresent))
             {
                 audioDevice = new AudioDevice();
-                if (!args.nosfx.Present)
+                if (!args.nosfx.IsPresent)
                 {
                     sound = new SilkSound(config, content, audioDevice);
                 }
-                if (!args.nomusic.Present)
+                if (!args.nomusic.IsPresent)
                 {
                     music = SilkConfigUtilities.GetMusicInstance(config, content, audioDevice);
                 }
             }
 
-            userInput = new SilkUserInput(config, window, this, !args.nomouse.Present);
+            userInput = new SilkUserInput(config, window, this, !args.nomouse.IsPresent);
 
             doom = new Doom(args, config, content, video, sound, music, userInput);
 

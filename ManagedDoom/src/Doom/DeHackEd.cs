@@ -34,7 +34,7 @@ namespace ManagedDoom
                 ReadFiles(args.deh.Value);
             }
 
-            if (!args.nodeh.Present)
+            if (!args.nodeh.IsPresent)
             {
                 ReadDeHackEdLump(wad);
             }

@@ -90,7 +90,7 @@ namespace ManagedDoom
 
         public GameOptions(CommandLineArgs args, GameContent content) : this()
         {
-            if (args.solonet.Present)
+            if (args.solonet.IsPresent)
             {
                 netGame = true;
             }

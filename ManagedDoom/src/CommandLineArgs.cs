@@ -252,19 +252,19 @@ namespace ManagedDoom
         /// </summary>
         public class Arg
         {
-            private bool present;
+            private bool isPresent;
 
             public Arg()
             {
-                this.present = false;
+                this.isPresent = false;
             }
 
-            public Arg(bool present)
+            public Arg(bool isPresent)
             {
-                this.present = present;
+                this.isPresent = isPresent;
             }
 
-            public bool Present => present;
+            public bool IsPresent => isPresent;
         }
 
         /// <summary>

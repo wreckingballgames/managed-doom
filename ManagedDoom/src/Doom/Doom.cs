@@ -133,27 +133,27 @@ namespace ManagedDoom
                 options.Skill = (GameSkill)(args.skill.Value - 1);
             }
 
-            if (args.deathmatch.Present)
+            if (args.deathmatch.IsPresent)
             {
                 options.Deathmatch = 1;
             }
 
-            if (args.altdeath.Present)
+            if (args.altdeath.IsPresent)
             {
                 options.Deathmatch = 2;
             }
 
-            if (args.fast.Present)
+            if (args.fast.IsPresent)
             {
                 options.FastMonsters = true;
             }
 
-            if (args.respawn.Present)
+            if (args.respawn.IsPresent)
             {
                 options.RespawnMonsters = true;
             }
 
-            if (args.nomonsters.Present)
+            if (args.nomonsters.IsPresent)
             {
                 options.NoMonsters = true;
             }
