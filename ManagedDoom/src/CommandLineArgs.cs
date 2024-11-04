@@ -57,7 +57,7 @@ namespace ManagedDoom
             file = Check_file(args);
             deh = Check_deh(args);
 
-            warp = Check_warp(args);
+            warp = CheckWarp(args);
             episode = GetInt(args, "-episode");
             skill = GetInt(args, "-skill");
 
@@ -154,7 +154,7 @@ namespace ManagedDoom
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
-        private static Arg<Tuple<int, int>> Check_warp(string[] args)
+        private static Arg<Tuple<int, int>> CheckWarp(string[] args)
         {
             var values = GetValues(args, "-warp");
             if (values.Length == 1)
