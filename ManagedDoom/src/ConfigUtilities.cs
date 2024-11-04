@@ -45,6 +45,10 @@ namespace ManagedDoom
             return Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
         }
 
+        /// <summary>
+        /// Get path to config file.
+        /// </summary>
+        /// <returns></returns>
         public static string GetConfigPath()
         {
             return Path.Combine(GetExeDirectory(), "managed-doom.cfg");
