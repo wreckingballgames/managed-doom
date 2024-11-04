@@ -171,6 +171,13 @@ namespace ManagedDoom
             return new Arg<Tuple<int, int>>();
         }
 
+        /// <summary>
+        /// Return a new Arg with a string value from the given command-line
+        /// argument. If no value is extracted from args, return default Arg.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         private static Arg<string> GetString(string[] args, string name)
         {
             var values = GetValues(args, name);
