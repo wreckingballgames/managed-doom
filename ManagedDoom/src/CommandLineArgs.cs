@@ -54,7 +54,7 @@ namespace ManagedDoom
         public CommandLineArgs(string[] args)
         {
             iwad = GetString(args, "-iwad");
-            file = Check_file(args);
+            file = CheckFile(args);
             deh = CheckDeh(args);
 
             warp = CheckWarp(args);
@@ -131,7 +131,7 @@ namespace ManagedDoom
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
-        private static Arg<string[]> Check_file(string[] args)
+        private static Arg<string[]> CheckFile(string[] args)
         {
             var values = GetValues(args, "-file");
             if (values.Length >= 1)
