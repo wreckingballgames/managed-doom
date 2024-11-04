@@ -337,6 +337,11 @@ namespace ManagedDoom
             return defaultValue;
         }
 
+        /// <summary>
+        /// Helper function to get a string corresponding to a boolean value.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         private static string BoolToString(bool value)
         {
             return value ? "true" : "false";
