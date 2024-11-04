@@ -84,6 +84,11 @@ namespace ManagedDoom
             throw new Exception("No IWAD was found!");
         }
 
+        /// <summary>
+        /// Check if a given string corresponds to a valid IWAD filename.
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static bool IsIwad(string path)
         {
             var name = Path.GetFileName(path).ToUpper();
