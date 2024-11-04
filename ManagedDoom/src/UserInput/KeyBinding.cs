@@ -47,6 +47,10 @@ namespace ManagedDoom
             this.mouseButtons = mouseButtons.ToArray();
         }
 
+        /// <summary>
+        /// Map all KeyBinding values to a comma-separated list of strings.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             var keyValues = keys.Select(key => DoomKeyEx.ToString(key));
