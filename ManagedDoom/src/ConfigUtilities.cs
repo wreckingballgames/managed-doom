@@ -36,6 +36,10 @@ namespace ManagedDoom
             "FREEDOOM1.WAD"
         };
 
+        /// <summary>
+        /// Get directory the .exe file this process is running from inhabits.
+        /// </summary>
+        /// <returns></returns>
         public static string GetExeDirectory()
         {
             return Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
