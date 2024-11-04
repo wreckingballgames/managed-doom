@@ -292,6 +292,14 @@ namespace ManagedDoom
             return defaultValue;
         }
 
+        /// <summary>
+        /// Parse dictionary for boolean value of given key. Return the
+        /// extracted value (in proper boolean form) or a default value.
+        /// </summary>
+        /// <param name="dic"></param>
+        /// <param name="name"></param>
+        /// <param name="defaultValue"></param>
+        /// <returns></returns>
         private static bool GetBool(Dictionary<string, string> dic, string name, bool defaultValue)
         {
             string stringValue;
