@@ -125,6 +125,12 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Return a new Arg with a list of values representing additional
+        /// file(s) to load. If no values are extracted, returns default Arg.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         private static Arg<string[]> Check_file(string[] args)
         {
             var values = GetValues(args, "-file");
