@@ -374,6 +374,11 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Method to convert a string to corresponding DoomKey.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static DoomKey Parse(string value)
         {
             switch (value)
