@@ -203,6 +203,10 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Save a config file with all keybinding pairs.
+        /// </summary>
+        /// <param name="path"></param>
         public void Save(string path)
         {
             try
