@@ -46,6 +46,11 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Method to convert given string to corresponding DoomMouseButton.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static DoomMouseButton Parse(string value)
         {
             switch (value)
