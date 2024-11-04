@@ -198,7 +198,7 @@ namespace ManagedDoom
         }
 
         /// <summary>
-        /// Return the list of values passed to a command-line argument.
+        /// Return the list of values passed to a given command-line argument.
         /// </summary>
         /// <param name="args"></param>
         /// <param name="name"></param>
