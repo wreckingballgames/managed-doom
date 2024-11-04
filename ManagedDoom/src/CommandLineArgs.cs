@@ -55,7 +55,7 @@ namespace ManagedDoom
         {
             iwad = GetString(args, "-iwad");
             file = Check_file(args);
-            deh = Check_deh(args);
+            deh = CheckDeh(args);
 
             warp = CheckWarp(args);
             episode = GetInt(args, "-episode");
@@ -142,7 +142,7 @@ namespace ManagedDoom
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
-        private static Arg<string[]> Check_deh(string[] args)
+        private static Arg<string[]> CheckDeh(string[] args)
         {
             var values = GetValues(args, "-deh");
             if (values.Length >= 1)
