@@ -95,6 +95,11 @@ namespace ManagedDoom
             return iwadNames.Contains(name);
         }
 
+        /// <summary>
+        /// Return an array of WAD paths extracted from args.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public static string[] GetWadPaths(CommandLineArgs args)
         {
             var wadPaths = new List<string>();
