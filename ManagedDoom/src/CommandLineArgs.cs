@@ -136,6 +136,12 @@ namespace ManagedDoom
             return new Arg<string[]>();
         }
 
+        /// <summary>
+        /// Return a new Arg with extracted value(s) representing DeHackEd
+        /// patches. If no values are extracted, returns default Arg.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         private static Arg<string[]> Check_deh(string[] args)
         {
             var values = GetValues(args, "-deh");
