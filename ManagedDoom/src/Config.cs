@@ -273,6 +273,14 @@ namespace ManagedDoom
             return defaultValue;
         }
 
+        /// <summary>
+        /// Parse dictionary for string value of given key. Return the
+        /// extracted value or a default value.
+        /// </summary>
+        /// <param name="dic"></param>
+        /// <param name="name"></param>
+        /// <param name="defaultValue"></param>
+        /// <returns></returns>
         private static string GetString(Dictionary<string, string> dic, string name, string defaultValue)
         {
             string stringValue;
