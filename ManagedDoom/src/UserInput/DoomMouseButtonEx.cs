@@ -19,6 +19,7 @@ using System;
 
 namespace ManagedDoom
 {
+    // DoomMouseButton Extensions
     public static class DoomMouseButtonEx
     {
         public static string ToString(DoomMouseButton button)
