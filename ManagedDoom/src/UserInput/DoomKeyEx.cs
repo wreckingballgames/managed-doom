@@ -22,6 +22,11 @@ namespace ManagedDoom
     // DoomKey Extensions
     public static class DoomKeyEx
     {
+        /// <summary>
+        /// Extension method to convert a DoomKey into corresponding char.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public static char GetChar(this DoomKey key)
         {
             switch (key)
