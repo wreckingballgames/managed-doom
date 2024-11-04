@@ -22,6 +22,11 @@ namespace ManagedDoom
     // DoomMouseButton Extensions
     public static class DoomMouseButtonEx
     {
+        /// <summary>
+        /// Method to convert DoomMouseButton to corresponding string.
+        /// </summary>
+        /// <param name="button"></param>
+        /// <returns></returns>
         public static string ToString(DoomMouseButton button)
         {
             switch (button)
