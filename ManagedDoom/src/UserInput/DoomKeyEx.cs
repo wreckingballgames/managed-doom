@@ -19,6 +19,7 @@ using System;
 
 namespace ManagedDoom
 {
+    // DoomKey Extensions
     public static class DoomKeyEx
     {
         public static char GetChar(this DoomKey key)
