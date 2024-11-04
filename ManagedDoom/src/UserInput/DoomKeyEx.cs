@@ -158,6 +158,11 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Method to convert a DoomKey into corresponding string.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public static string ToString(DoomKey key)
         {
             switch (key)
