@@ -106,7 +106,7 @@ namespace ManagedDoom
         }
 
         /// <summary>
-        /// Return the lines of a set of data in IEnumerable<string> form.
+        /// Return the lines of a set of data in IEnumerable form.
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
