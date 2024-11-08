@@ -200,6 +200,9 @@ namespace ManagedDoom
             nextState = DoomState.Opening;
         }
 
+        /// <summary>
+        /// Process the event queue.
+        /// </summary>
         private void DoEvents()
         {
             if (wiping)
