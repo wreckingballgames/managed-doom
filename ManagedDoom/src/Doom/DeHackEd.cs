@@ -105,6 +105,11 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Return the lines of a set of data in IEnumerable<string> form.
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         private static IEnumerable<string> ReadLines(byte[] data)
         {
             using (var ms = new MemoryStream(data))
