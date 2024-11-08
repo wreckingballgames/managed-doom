@@ -192,6 +192,9 @@ namespace ManagedDoom
             nextState = DoomState.Game;
         }
 
+        /// <summary>
+        /// Flag the game to end and return to the title screen.
+        /// </summary>
         public void EndGame()
         {
             nextState = DoomState.Opening;
