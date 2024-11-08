@@ -506,6 +506,9 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Start a screen wipe.
+        /// </summary>
         private void StartWipe()
         {
             wipeEffect.Start();
