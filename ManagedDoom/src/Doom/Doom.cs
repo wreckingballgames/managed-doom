@@ -571,6 +571,9 @@ namespace ManagedDoom
             nextState = DoomState.Game;
         }
 
+        /// <summary>
+        /// Set the flag for quitting the game to true.
+        /// </summary>
         public void Quit()
         {
             quit = true;
