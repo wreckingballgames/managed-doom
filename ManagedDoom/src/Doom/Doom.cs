@@ -373,6 +373,11 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Manage the game loop.
+        /// </summary>
+        /// <returns>The result of this frame's update</returns>
+        /// <exception cref="Exception"></exception>
         public UpdateResult Update()
         {
             DoEvents();
