@@ -247,6 +247,11 @@ namespace ManagedDoom
             events.Clear();
         }
 
+        /// <summary>
+        /// Check an event's given key and handle it if it represents a function key.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>Whether the key was a function key or not</returns>
         private bool CheckFunctionKey(DoomKey key)
         {
             switch (key)
