@@ -75,6 +75,11 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Attempt to read in the DeHackEd lump from given WAD.
+        /// </summary>
+        /// <param name="wad"></param>
+        /// <exception cref="Exception"></exception>
         private static void ReadDeHackEdLump(Wad wad)
         {
             var lump = wad.GetLumpNumber("DEHACKED");
