@@ -589,6 +589,10 @@ namespace ManagedDoom
             quitMessage = message;
         }
 
+        /// <summary>
+        /// Add an event to the event queue if there is room.
+        /// </summary>
+        /// <param name="e"></param>
         public void PostEvent(DoomEvent e)
         {
             if (events.Count < 64)
