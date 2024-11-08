@@ -27,6 +27,11 @@ namespace ManagedDoom
     {
         private static Tuple<Action<World, Player, PlayerSpriteDef>, Action<World, Mobj>>[] sourcePointerTable;
 
+        /// <summary>
+        /// Initialize DeHackEd if necessary.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <param name="wad"></param>
         public static void Initialize(CommandLineArgs args, Wad wad)
         {
             if (args.deh.IsPresent)
