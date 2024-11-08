@@ -529,6 +529,9 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Set the flag to unpause the game.
+        /// </summary>
         public void ResumeGame()
         {
             if (currentState == DoomState.Game &&
