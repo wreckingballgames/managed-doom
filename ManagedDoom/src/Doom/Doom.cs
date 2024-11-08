@@ -180,6 +180,12 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Start a new game.
+        /// </summary>
+        /// <param name="skill"></param>
+        /// <param name="episode"></param>
+        /// <param name="map"></param>
         public void NewGame(GameSkill skill, int episode, int map)
         {
             game.DeferedInitNew(skill, episode, map);
