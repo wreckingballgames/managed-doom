@@ -542,6 +542,12 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Coordinate the game object to save the game.
+        /// </summary>
+        /// <param name="slotNumber"></param>
+        /// <param name="description"></param>
+        /// <returns>Whether the game successfully saved</returns>
         public bool SaveGame(int slotNumber, string description)
         {
             if (currentState == DoomState.Game && game.State == GameState.Level)
