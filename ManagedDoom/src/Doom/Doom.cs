@@ -516,6 +516,9 @@ namespace ManagedDoom
             wiping = true;
         }
 
+        /// <summary>
+        /// Set the flag to pause the game.
+        /// </summary>
         public void PauseGame()
         {
             if (currentState == DoomState.Game &&
