@@ -111,6 +111,9 @@ namespace ManagedDoom
             CheckGameArgs();
         }
 
+        /// <summary>
+        /// Process command line arguments.
+        /// </summary>
         private void CheckGameArgs()
         {
             if (args.warp.IsPresent)
