@@ -45,6 +45,11 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Attempt to read the given DeHackEd patches.
+        /// </summary>
+        /// <param name="fileNames"></param>
+        /// <exception cref="Exception"></exception>
         private static void ReadFiles(params string[] fileNames)
         {
             string lastFileName = null;
