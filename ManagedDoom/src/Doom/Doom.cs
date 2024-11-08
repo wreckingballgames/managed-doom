@@ -561,6 +561,10 @@ namespace ManagedDoom
             }
         }
 
+        /// <summary>
+        /// Coordinate the game object to load a saved game.
+        /// </summary>
+        /// <param name="slotNumber"></param>
         public void LoadGame(int slotNumber)
         {
             game.LoadGame(slotNumber);
