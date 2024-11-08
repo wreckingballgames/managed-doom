@@ -579,6 +579,10 @@ namespace ManagedDoom
             quit = true;
         }
 
+        /// <summary>
+        /// Set the flag for quitting the game to true and include a message.
+        /// </summary>
+        /// <param name="message"></param>
         public void Quit(string message)
         {
             quit = true;
