@@ -469,6 +469,9 @@ namespace ManagedDoom
             return UpdateResult.None;
         }
 
+        /// <summary>
+        /// Determine if mouse should be grabbed or not and instruct input object accordingly.
+        /// </summary>
         private void CheckMouseState()
         {
             bool mouseShouldBeGrabbed;
